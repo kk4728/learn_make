@@ -1,0 +1,14 @@
+.PHONY: all
+
+foo = $(bar)
+bar = $(ugh)
+ugh = Huh?
+
+CFLAGS = $(include_dirs) -O
+
+include_dirs = -Ifoo -Ibar
+
+all:
+	@echo $(CFLAGS)
+
+
