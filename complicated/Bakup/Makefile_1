@@ -20,8 +20,6 @@ DEPS := $(addprefix $(DIR_DEPS)/, $(DEPS))
 
 all: $(DIRS) $(DEPS) $(EXE)
 
-include $(DEPS)
-
 $(DIRS):
 	$(MKDIR) $@
 $(EXE) : $(OBJS)
