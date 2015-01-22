@@ -4,8 +4,7 @@ CC = gcc
 RM = rm
 
 EXE = simple.exe
-SRCS = $(wildcard *.c)
-OBJS = $(patsubst %.c, %.o, $(SRCS))
+OBJS = main.o foo.o
 
 $(EXE) :$(OBJS)
 	$(CC) -o $@ $^

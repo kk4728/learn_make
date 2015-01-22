@@ -1,0 +1,7 @@
+.PHONY: all
+
+foo = a.c b.c c.c
+bar := $(foo:.c=.o)
+
+all:
+	@echo "bar = $(bar)"
